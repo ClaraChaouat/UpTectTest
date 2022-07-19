@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# Layout integration:movie_camera:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description::art:
+The aim of this project is to replicate a layout according to a given design
 
-## Available Scripts
-
-In the project directory, you can run:
+## Installation:man_mechanic:
+1. Clone this repository from GitHub
+2. In the project directory, you can run:
 
 ### `npm start`
 
@@ -13,3 +14,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+
+
+
+
