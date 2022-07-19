@@ -1,6 +1,6 @@
-# Layout integration:movie_camera:
+# Layout integration::art:
 
-## Description::art:
+## Description::woman_teacher:
 The aim of this project is to replicate a layout according to a given design
 
 ## Installation:man_mechanic:
