@@ -26,7 +26,7 @@ Next, in the table with color boxes, at the very end of the layout, you'll notic
 Whereas for the others, I built the color boxes by adding the image and the corresponding text. The reason why I built it this way (purple & green boxes) is that I was not able to export the "image part" of it.
 
 
-I hope you'll like like.
+I hope you'll like it.
 
 Cheers.
 
