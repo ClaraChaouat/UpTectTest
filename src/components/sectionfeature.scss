@@ -1,0 +1,79 @@
+@import "../styles/settings.scss";
+@import "../styles/mixins.scss";
+
+.cardsContainer {
+  display: flex;
+  margin: 0 40px;
+  margin-bottom: 80px;
+  justify-content: center;
+
+  .middleCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+
+    &.reversed {
+      flex-direction: row-reverse;
+    }
+
+    .middleCardsText {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: 30%;
+      justify-content: center;
+      order: 2;
+
+      .middleCardsTextSection {
+        font-family: $secondaryFontFamily;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 100%;
+
+        &.primary {
+          color: $firstCardTitleColor;
+        }
+
+        &.secondary {
+          color: $secondCardTitleColor;
+        }
+
+        &.tertiary {
+          color: $thirdCardTitleColor;
+        }
+      }
+
+      .middleCardsTextTitle {
+        @include fontStylemanropeBold;
+        text-align: initial;
+        margin-top: 12px;
+        margin-bottom: 24px;
+      }
+
+      .middleCardsTextDescription {
+        text-align: initial;
+        @include fontStyleInter;
+      }
+    }
+
+    .middleCardsCard {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+
+      .middleCardsCardImagesContainer {
+        .middleCardsCardImagesBackground {
+          width: 100%;
+          height: 100%;
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+          }
+        }
+      }
+    }
+  }
+}

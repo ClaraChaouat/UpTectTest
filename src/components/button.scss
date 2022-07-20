@@ -1,0 +1,21 @@
+@import "../styles/settings.scss";
+@import "../styles/mixins.scss";
+
+.btn {
+  font-family: $primaryFontFamily;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 9px 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.btn--primary {
+  background-color: $ternaryColor;
+}
+
+.btn--secondary {
+  background-color: $secondaryColor;
+}

@@ -1,0 +1,67 @@
+@import "../styles/settings.scss";
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $primaryFontFamily;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 65px;
+  flex-wrap: wrap;
+
+  .navBarIcon {
+    padding-left: 40px;
+    padding-right: 80px;
+  }
+
+  .navBarItems {
+    padding-left: 0;
+    line-height: 24px;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      li {
+        list-style-type: none;
+        margin: 0 32px;
+
+        a {
+          text-decoration: none;
+          color: $secondaryColor;
+
+          img {
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .navBarLogIn {
+    line-height: 40px;
+    padding-right: 30px;
+
+    a {
+      text-decoration: none;
+      color: $ternaryColor;
+    }
+
+    button {
+      font-family: $primaryFontFamily;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 40px;
+      margin-left: 14px;
+      padding: 0 16px;
+      color: $primaryColor;
+      background-color: $ternaryColor;
+      border: 1px solid transparent;
+      border-radius: 8px;
+    }
+  }
+}

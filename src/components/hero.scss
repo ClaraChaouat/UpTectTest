@@ -1,0 +1,116 @@
+@import "../styles/settings.scss";
+@import "../styles/mixins.scss";
+
+.subheader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .subheaderTitle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    p {
+      display: flex;
+      justify-content: center;
+      font-family: $secondaryFontFamily;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 70px;
+      flex-wrap: wrap;
+    }
+
+    .subheaderTitleContainer {
+      position: relative;
+      img {
+        position: absolute;
+        max-width: none;
+        height: auto;
+        z-index: 10;
+
+        &.charlotteMouse {
+          top: 97%;
+          left: 95%;
+          width: 20%;
+        }
+
+        &.lilyMouse {
+          top: -5%;
+          left: 83%;
+          width: 12%;
+        }
+
+        &.alexandreMouse {
+          top: -26%;
+          left: -4%;
+          width: 18%;
+        }
+
+        &.boubaMouse {
+          top: 74%;
+          left: -11%;
+          width: 15%;
+        }
+      }
+    }
+  }
+
+  .subheaderSubtitle {
+    display: flex;
+    justify-content: center;
+    font-family: $primaryFontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    p {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .subheaderSubtitleFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .subheaderSubtitleFooterText {
+      p {
+        font-family: $primaryFontFamily;
+        color: #8b8b8a;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        margin-top: 120px;
+        margin-bottom: 35px;
+      }
+    }
+
+    .subheaderSubtitleFooterIcon {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: wrap;
+        list-style-type: none;
+
+        li {
+          margin: 0 25px;
+        }
+      }
+    }
+  }
+}

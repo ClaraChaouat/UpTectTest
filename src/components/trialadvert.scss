@@ -1,0 +1,36 @@
+@import "../styles/settings.scss";
+@import "../styles/mixins.scss";
+
+.trialAdvertContainer {
+  display: flex;
+  flex-direction: column;
+
+  .trialAdvertQuestion {
+    @include manropeColoredTitles;
+    color: $ternaryColor;
+    line-height: 16px;
+    margin-bottom: 12px;
+    margin-top: 104px;
+  }
+
+  .trialAdvertConditions {
+    @include trialConditions;
+    justify-content: center;
+    color: $secondaryColor;
+    margin-top: 32px;
+    margin-bottom: 50px;
+
+    > p {
+      margin-right: 56px;
+    }
+
+    img {
+      @include tickIconStyling;
+    }
+  }
+
+  .trialAdvertTitle {
+    @include fontStylemanropeBold;
+    margin-bottom: 40px;
+  }
+}

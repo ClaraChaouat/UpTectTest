@@ -1,0 +1,244 @@
+@import "../styles/settings.scss";
+@import "../styles/mixins.scss";
+
+.moreInfoPageContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1708px;
+  margin-bottom: 104px;
+
+  .moreInfoPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 104px;
+    background-color: $moreInfoPageBackGroundColor;
+    border-radius: 12px;
+
+    .moreInfoPageHeader {
+      margin-bottom: 88px;
+      .moreInfoPageHeaderTitle {
+        @include fontStylemanropeBold;
+        padding-top: 104px;
+        margin-bottom: 24px;
+      }
+
+      .moreInfoPageHeaderText {
+        @include fontStyleInter;
+      }
+    }
+
+    .moreInfoPageFeatures {
+      width: 100%;
+      max-width: 1328px;
+      padding: 0 64px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+
+      .columnOne {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        height: 100%;
+        width: 30%;
+
+        .row1 {
+          background-color: $primaryColor;
+          height: auto;
+          border-radius: 12px;
+
+          img {
+            max-width: 100%;
+            width: 347px;
+            padding: 102px 3px 78px 40px;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            padding: 0 40px 40px 40px;
+
+            h3 {
+              @include fontStyleFeaturesTitle;
+              color: $secondaryColor;
+              margin-bottom: 10px;
+            }
+
+            p {
+              @include fontStyleFeaturesText;
+              color: $secondaryColor;
+            }
+          }
+        }
+
+        .row2 {
+          display: flex;
+          flex-direction: column;
+          background-color: #33d1ea;
+          border-radius: 12px;
+          height: auto;
+
+          img {
+            width: 295px;
+            max-width: 100%;
+            padding: 205px 49px 203px 40px;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            padding: 0 40px 40px 40px;
+
+            h3 {
+              @include fontStyleFeaturesTitle;
+              margin-bottom: 10px;
+            }
+
+            p {
+              @include fontStyleFeaturesText;
+            }
+          }
+        }
+      }
+      .columnTwo {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
+        gap: 24px;
+
+        .row1 {
+          background-color: #ffb423;
+          height: auto;
+          border-radius: 12px;
+
+          img {
+            max-width: 100%;
+            width: 244px;
+            padding: 110px 20px 0;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            padding: 97px 40px 45px;
+
+            h3 {
+              @include fontStyleFeaturesTitle;
+              margin-bottom: 10px;
+            }
+
+            p {
+              @include fontStyleFeaturesText;
+            }
+          }
+        }
+
+        .row2 {
+          background-color: $ternaryColor;
+          height: auto;
+          border-radius: 12px;
+
+          img {
+            max-width: 100%;
+            width: 384px;
+            height: 100%;
+            border-radius: 12px;
+          }
+        }
+
+        .row3 {
+          background-color: #ff2e57;
+          height: auto;
+          border-radius: 12px;
+
+          img {
+            max-width: 100%;
+            width: 304px;
+            height: auto;
+            padding: 40px 40px 32px 40px;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            padding: 0 40px 40px;
+
+            h3 {
+              @include fontStyleFeaturesTitle;
+              margin-bottom: 10px;
+            }
+
+            p {
+              @include fontStyleFeaturesText;
+            }
+          }
+        }
+      }
+
+      .columnThree {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 30%;
+        gap: 24px;
+
+        .row1 {
+          background-color: #179690;
+          height: auto;
+          border-radius: 12px;
+
+          img {
+            max-width: 100%;
+            width: 384px;
+            height: auto;
+          }
+        }
+        .row2 {
+          background-color: $primaryColor;
+          height: auto;
+          border-radius: 12px;
+
+          img {
+            max-width: 100%;
+            width: 304px;
+            height: auto;
+            padding: 40px;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            padding: 0 40px 40px;
+
+            h3 {
+              @include fontStyleFeaturesTitle;
+              color: $secondaryColor;
+              margin-bottom: 10px;
+            }
+
+            p {
+              @include fontStyleFeaturesText;
+              color: $secondaryColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
