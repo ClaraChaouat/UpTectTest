@@ -17,9 +17,7 @@ export function Hero() {
     <div className="subheader">
       <div className="subheaderTitle">
         <div className="subheaderTitleContainer">
-          <p>
-            Where hiring <br /> comes together.
-          </p>
+          <p>Where hiring comes together.</p>
           <img
             className="charlotteMouse"
             src={charlotte}
@@ -37,7 +35,7 @@ export function Hero() {
 
       <div className="subheaderSubtitle">
         <p>
-          Everything you need to organize your hiring <br /> and make a great
+          Everything you need to organize your hiring and make a great
           impression
         </p>
       </div>
