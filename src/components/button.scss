@@ -1,5 +1,6 @@
 @import "../styles/settings.scss";
 @import "../styles/mixins.scss";
+@import "../styles/responsive.scss";
 
 .btn {
   font-family: $primaryFontFamily;
@@ -18,4 +19,11 @@
 
 .btn--secondary {
   background-color: $secondaryColor;
+}
+
+@media #{$mobile-version} {
+  .btn {
+    font-size: 12px;
+    padding: 0 10px;
+  }
 }
