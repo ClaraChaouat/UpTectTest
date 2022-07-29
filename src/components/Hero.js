@@ -14,7 +14,7 @@ import alexandre from "../images/alexandre-mouse.svg";
 
 export function Hero() {
   return (
-    <div className="subheader">
+    <div style={{display:"none"}} className="subheader">
       <div className="subheaderTitle">
         <div className="subheaderTitleContainer">
           <p>Where hiring comes together.</p>

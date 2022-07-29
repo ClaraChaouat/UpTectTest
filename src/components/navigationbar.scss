@@ -51,40 +51,49 @@
       text-decoration: none;
       color: $ternaryColor;
     }
-
-    button {
-      font-family: $primaryFontFamily;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 40px;
-      margin-left: 14px;
-      padding: 0 16px;
-      color: $primaryColor;
-      background-color: $ternaryColor;
-      border: 1px solid transparent;
-      border-radius: 8px;
-    }
   }
 }
 
+button {
+  font-family: $primaryFontFamily;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 14px;
+  padding: 0 16px;
+  color: $primaryColor;
+  background-color: $ternaryColor;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
 @media #{$mobile-version} {
-  .navBarIcon {
-    padding-left: 30px;
-  }
+  .navBar {
+    font-size: 14px;
 
-  .navBarItems {
-    order: 3;
-    margin-top: 40px;
-    width: 100%;
-  }
-
-  .navBarLogIn {
-    a {
-      font-size: 12px;
+    .navBarIcon {
+      padding-left: 30px;
     }
 
-    button {
-      background-color: red;
+    .navBarItems {
+      order: 3;
+      margin-top: 40px;
+      width: 100%;
+
+      ul {
+        justify-content: center;
+      }
+    }
+
+    .navBarLogIn {
+      a {
+        font-size: 12px;
+      }
+
+      button {
+        font-size: 12px;
+        padding: 0 4px;
+      }
     }
   }
 }
