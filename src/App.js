@@ -18,7 +18,7 @@ function App() {
           <NavigationBar />
           <Hero />
         </header>
-        <main style={{display:"none"}}>
+        <main>
           <Template />
           <SectionFeature
             kicker="Organise"
