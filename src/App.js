@@ -18,7 +18,7 @@ function App() {
           <NavigationBar />
           <Hero />
         </header>
-        <main>
+        <main style={{ display: "none" }}>
           <Template />
           <SectionFeature
             kicker="Organise"
@@ -34,7 +34,6 @@ function App() {
             description="It’s easy for your whole team to join in on hiring."
             image={collaboration}
             theme="secondary"
-          
           />
           <SectionFeature
             kicker="Connect"
