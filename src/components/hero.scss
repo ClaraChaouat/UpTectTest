@@ -1,5 +1,6 @@
 @import "../styles/settings.scss";
 @import "../styles/mixins.scss";
+@import "../styles/responsive.scss";
 
 .subheader {
   display: flex;
@@ -95,22 +96,47 @@
         margin-bottom: 35px;
       }
     }
+  }
+}
 
-    .subheaderSubtitleFooterIcon {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+.subheaderSubtitleFooterIcon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
-      ul {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        flex-wrap: wrap;
-        list-style-type: none;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: none;
 
-        li {
-          margin: 0 25px;
-        }
+    li {
+      margin: 0 25px;
+    }
+  }
+}
+
+@media #{$medium-screen} {
+  .subheaderTitleContainer {
+    img {
+      display: none;
+    }
+  }
+
+  .subheaderSubtitleFooter {
+    margin-bottom: 20px;
+  }
+
+  .subheaderSubtitleFooterIcon {
+    width: 100vw;
+    overflow-x: scroll;
+
+    ul {
+      justify-content: center;
+      gap: 20px;
+
+      li {
+        margin: 0;
       }
     }
   }
