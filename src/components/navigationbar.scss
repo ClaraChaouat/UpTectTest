@@ -12,28 +12,25 @@
   margin-top: 20px;
   margin-bottom: 65px;
   flex-wrap: wrap;
-
-  .navBarIcon {
-    padding-left: 40px;
-    padding-right: 80px;
-  }
+  padding: 0 56px;
 
   .navBarItems {
     padding-left: 0;
     line-height: 24px;
+    flex-grow: 1;
 
     ul {
       display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
 
       li {
         list-style-type: none;
-        margin: 0 32px;
 
         a {
           text-decoration: none;
           color: $secondaryColor;
+          // white-space: nowrap;
 
           img {
             margin-left: 6px;
@@ -42,16 +39,21 @@
       }
     }
   }
+}
 
-  .navBarLogIn {
-    line-height: 40px;
-    padding-right: 30px;
+.navBarLogIn {
+  line-height: 40px;
+  width: 230px;
 
-    a {
-      text-decoration: none;
-      color: $ternaryColor;
-    }
+  a {
+    text-decoration: none;
+    color: $ternaryColor;
   }
+}
+
+.navBarIcon {
+  width: 230px;
+  text-align: left;
 }
 
 button {
@@ -67,33 +69,70 @@ button {
   border-radius: 8px;
 }
 
-@media #{$mobile-version} {
+@media #{$medium-screen} {
   .navBar {
-    font-size: 14px;
+    padding: 0 24px;
+    justify-content: center;
+    gap: 8px;
+  }
 
-    .navBarIcon {
-      padding-left: 30px;
-    }
+  .navBarIcon,
+  .navBarLogIn {
+    width: auto;
+    flex-grow: 1;
+  }
 
-    .navBarItems {
-      order: 3;
-      margin-top: 40px;
-      width: 100%;
+  .navBarIcon img {
+    width: 85px;
+  }
 
-      ul {
-        justify-content: center;
-      }
-    }
+  .navBarItems {
+    order: 2;
+    width: 100%;
+    outline: 2px solid red;
+    margin: 16px -24px 0;
+    width: 100vw;
+    overflow-x: scroll;
+    padding-left: 24px;
+    padding-bottom: 8px;
 
-    .navBarLogIn {
-      a {
-        font-size: 12px;
-      }
-
-      button {
-        font-size: 12px;
-        padding: 0 4px;
-      }
+    ul {
+      justify-content: flex-start;
     }
   }
+
+  .buttonFullText {
+    display: none;
+  }
 }
+
+// @media #{$mobile-version} {
+//   .navBar {
+//     font-size: 14px;
+
+//     .navBarIcon {
+//       padding-left: 30px;
+//     }
+
+//     .navBarItems {
+//       order: 3;
+//       margin-top: 40px;
+//       width: 100%;
+
+//       ul {
+//         justify-content: center;
+//       }
+//     }
+
+//     .navBarLogIn {
+//       a {
+//         font-size: 12px;
+//       }
+
+//       button {
+//         font-size: 12px;
+//         padding: 0 4px;
+//       }
+//     }
+//   }
+// }

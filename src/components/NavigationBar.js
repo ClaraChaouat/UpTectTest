@@ -32,7 +32,9 @@ export function NavigationBar() {
         <a href="#" className="navBarLogInItem">
           Log in
         </a>
-        <button>Start 14-days trial</button>
+        <button>
+          Start <span class="buttonFullText">14-days</span> trial
+        </button>
       </div>
     </div>
   );
