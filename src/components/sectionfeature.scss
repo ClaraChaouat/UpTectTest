@@ -1,5 +1,6 @@
 @import "../styles/settings.scss";
 @import "../styles/mixins.scss";
+@import "../styles/responsive.scss";
 
 .cardsContainer {
   display: flex;
@@ -7,73 +8,86 @@
   margin-bottom: 80px;
   justify-content: center;
 
-  .middleCards {
+  .middleCardsText {
     display: flex;
-    justify-content: space-between;
-    gap: 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 30%;
+    justify-content: center;
+    order: 2;
 
-    &.reversed {
-      flex-direction: row-reverse;
-    }
+    .middleCardsTextSection {
+      font-family: $secondaryFontFamily;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 100%;
 
-    .middleCardsText {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      min-width: 30%;
-      justify-content: center;
-      order: 2;
-
-      .middleCardsTextSection {
-        font-family: $secondaryFontFamily;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 100%;
-
-        &.primary {
-          color: $firstCardTitleColor;
-        }
-
-        &.secondary {
-          color: $secondCardTitleColor;
-        }
-
-        &.tertiary {
-          color: $thirdCardTitleColor;
-        }
+      &.primary {
+        color: $firstCardTitleColor;
       }
 
-      .middleCardsTextTitle {
-        @include fontStylemanropeBold;
-        text-align: initial;
-        margin-top: 12px;
-        margin-bottom: 24px;
+      &.secondary {
+        color: $secondCardTitleColor;
       }
 
-      .middleCardsTextDescription {
-        text-align: initial;
-        @include fontStyleInter;
+      &.tertiary {
+        color: $thirdCardTitleColor;
       }
     }
 
-    .middleCardsCard {
-      display: flex;
-      justify-content: flex-start;
-      width: 100%;
+    .middleCardsTextDescription {
+      text-align: initial;
+      @include fontStyleInter;
+    }
+  }
 
-      .middleCardsCardImagesContainer {
-        .middleCardsCardImagesBackground {
-          width: 100%;
+  .middleCardsCard {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    .middleCardsCardImagesContainer {
+      .middleCardsCardImagesBackground {
+        width: 100%;
+        height: 100%;
+
+        img {
           height: 100%;
-
-          img {
-            height: 100%;
-            width: 100%;
-            border-radius: 12px;
-          }
+          width: 100%;
+          border-radius: 12px;
         }
       }
     }
+  }
+}
+
+.middleCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  &.reversed {
+    flex-direction: row-reverse;
+  }
+}
+
+.middleCardsTextTitle {
+  @include fontStylemanropeBold;
+  text-align: initial;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+@media #{$medium-screen} {
+  .middleCards {
+    flex-direction: column-reverse;
+    &.reversed {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .middleCardsTextTitle {
+    font-size: 35px;
   }
 }
