@@ -30,7 +30,7 @@
         a {
           text-decoration: none;
           color: $secondaryColor;
-          // white-space: nowrap;
+          white-space: nowrap;
 
           img {
             margin-left: 6px;
@@ -89,7 +89,6 @@ button {
   .navBarItems {
     order: 2;
     width: 100%;
-    outline: 2px solid red;
     margin: 16px -24px 0;
     width: 100vw;
     overflow-x: scroll;
@@ -105,34 +104,3 @@ button {
     display: none;
   }
 }
-
-// @media #{$mobile-version} {
-//   .navBar {
-//     font-size: 14px;
-
-//     .navBarIcon {
-//       padding-left: 30px;
-//     }
-
-//     .navBarItems {
-//       order: 3;
-//       margin-top: 40px;
-//       width: 100%;
-
-//       ul {
-//         justify-content: center;
-//       }
-//     }
-
-//     .navBarLogIn {
-//       a {
-//         font-size: 12px;
-//       }
-
-//       button {
-//         font-size: 12px;
-//         padding: 0 4px;
-//       }
-//     }
-//   }
-// }
