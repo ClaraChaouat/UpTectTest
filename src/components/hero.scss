@@ -141,7 +141,8 @@
     overflow-x: scroll;
 
     ul {
-      justify-content: flex-start;
+      justify-content: space-between;
+      padding: 0 24px;
       gap: 20px;
 
       li {

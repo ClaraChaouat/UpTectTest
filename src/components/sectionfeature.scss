@@ -80,6 +80,10 @@
 }
 
 @media #{$medium-screen} {
+
+  .cardsContainer {
+    margin:40 24px;
+  }
   .middleCards {
     flex-direction: column-reverse;
     &.reversed {
@@ -89,5 +93,6 @@
 
   .middleCardsTextTitle {
     font-size: 35px;
+
   }
 }
