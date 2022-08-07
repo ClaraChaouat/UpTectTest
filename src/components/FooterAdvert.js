@@ -5,7 +5,7 @@ import { Button } from "./Button";
 
 export function FooterAdvert() {
   return (
-    <div className="footerContainer">
+    <div style={{display:"none"}}  className="footerContainer">
       <div className="footerContainerBackground">
         <div className="footerBackgroundImage">
           <img src={getStarted} alt="Background effect"></img>

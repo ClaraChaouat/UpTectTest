@@ -18,7 +18,7 @@ function App() {
           <NavigationBar />
           <Hero />
         </header>
-        <main style={{ display: "none" }}>
+        <main>
           <Template />
           <SectionFeature
             kicker="Organise"
@@ -43,9 +43,6 @@ function App() {
             rowInverted
             theme="tertiary"
           />
-          {/* <UpperCards />
-          <Middlecard />
-          <BottomCard /> */}
           <FooterAdvert />
           <MoreInfoPage />
           <TrialAdvert />

@@ -4,7 +4,7 @@ import { Button } from "./Button";
 
 export function TrialAdvert() {
   return (
-    <div className="trialAdvertContainer">
+    <div style={{display:"none"}}  className="trialAdvertContainer">
       <div className="trialAdvertQuestion">What are you waiting for?</div>
       <div className="trialAdvertTitle">
         Start you free <br /> Homerun trial today
