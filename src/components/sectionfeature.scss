@@ -21,7 +21,7 @@
       font-style: normal;
       font-weight: 800;
       font-size: 16px;
-      line-height: 100%;
+      line-height: 1;
 
       &.primary {
         color: $firstCardTitleColor;
@@ -82,7 +82,7 @@
 @media #{$medium-screen} {
 
   .cardsContainer {
-    margin:40 24px;
+    margin:40px 24px;
   }
   .middleCards {
     flex-direction: column-reverse;
