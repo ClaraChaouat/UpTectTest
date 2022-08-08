@@ -5,14 +5,14 @@ import { Button } from "./Button";
 
 export function FooterAdvert() {
   return (
-    <div style={{display:"none"}}  className="footerContainer">
+    <div className="footerContainer">
       <div className="footerContainerBackground">
         <div className="footerBackgroundImage">
           <img src={getStarted} alt="Background effect"></img>
         </div>
         <div className="footerItems">
           <div className="footerTitle">
-            Start your free <br /> Homerun trial today
+            Start your free Homerun trial today
           </div>
           <div className="footerConditions">
             <p className="footerConditionsText">

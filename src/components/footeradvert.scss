@@ -1,5 +1,6 @@
 @import "../styles/settings.scss";
 @import "../styles/mixins.scss";
+@import "../styles/responsive.scss";
 
 .footerContainer {
   display: flex;
@@ -8,7 +9,6 @@
   margin-bottom: 20px;
   margin-top: 100px;
   max-width: 100%;
-  flex-wrap: wrap;
 
   .footerContainerBackground {
     display: flex;
@@ -28,45 +28,58 @@
       }
     }
 
-    .footerItems {
+    .footerConditions {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background: transparent;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 10;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      padding-left: 64px;
-      padding-right: 64px;
+      font-family: $primaryFontFamily;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1;
+      gap: 24px;
 
-      .footerTitle {
-        display: flex;
-        font-family: $secondaryFontFamily;
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 48px;
-        text-align: start;
-      }
-
-      .footerConditions {
-        display: flex;
-        font-family: $primaryFontFamily;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 100%;
-
-        .footerConditionsText {
-          margin-left: 68px;
-
-          img {
-            @include tickIconStyling;
-          }
+      .footerConditionsText {
+        img {
+          @include tickIconStyling;
         }
       }
     }
+  }
+}
+
+.footerItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding: 0 64px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.footerTitle {
+  display: flex;
+  font-family: $secondaryFontFamily;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: start;
+  max-width: 460px;
+}
+
+@media #{$medium-screen} {
+  .footerTitle {
+    font-size: 30px;
+  }
+
+  .footerItems {
+    flex-direction: column;
+  }
+
+  .footerTitle {
+    text-align: center;
   }
 }
