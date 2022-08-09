@@ -10,38 +10,36 @@
   margin-top: 100px;
   max-width: 100%;
 
-  .footerContainerBackground {
+  .footerConditions {
     display: flex;
-    position: relative;
-    width: 100%;
-    background-color: $ternaryColor;
-    border-radius: 12px;
+    font-family: $primaryFontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    gap: 24px;
 
-    .footerBackgroundImage {
-      display: flex;
-      height: 100%;
-
+    .footerConditionsText {
       img {
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
+        @include tickIconStyling;
       }
     }
+  }
+}
 
-    .footerConditions {
-      display: flex;
-      font-family: $primaryFontFamily;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1;
-      gap: 24px;
+.footerContainerBackground {
+  position: relative;
+  width: 100%;
+  background-color: $ternaryColor;
+  border-radius: 12px;
 
-      .footerConditionsText {
-        img {
-          @include tickIconStyling;
-        }
-      }
+  .footerBackgroundImage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    img {
+      max-width: 100%;
     }
   }
 }
@@ -51,10 +49,8 @@
   justify-content: space-between;
   align-items: center;
   background: transparent;
-  position: absolute;
-  z-index: 10;
   width: 100%;
-  padding: 0 64px;
+  padding: 72px 64px;
   top: 0;
   bottom: 0;
   margin: auto 0;
@@ -77,9 +73,15 @@
 
   .footerItems {
     flex-direction: column;
+    padding: 24px 0;
+    gap: 16px;
   }
 
   .footerTitle {
     text-align: center;
+  }
+
+  .footerContainerBackground {
+    margin: 0 24px;
   }
 }
