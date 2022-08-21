@@ -1,4 +1,7 @@
 # Layout integration::art:
+<p align="center">
+  <img width="700" src="./src/images/upflow.gif"/>
+</p>
 
 ## Description::woman_teacher:
 The aim of this project is to replicate a layout according to a given design
