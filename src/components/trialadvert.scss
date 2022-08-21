@@ -1,5 +1,6 @@
 @import "../styles/settings.scss";
 @import "../styles/mixins.scss";
+@import "../styles/responsive.scss";
 
 .trialAdvertContainer {
   display: flex;
@@ -13,24 +14,34 @@
     margin-top: 104px;
   }
 
-  .trialAdvertConditions {
-    @include trialConditions;
-    justify-content: center;
-    color: $secondaryColor;
-    margin-top: 32px;
-    margin-bottom: 50px;
-
-    > p {
-      margin-right: 56px;
-    }
-
-    img {
-      @include tickIconStyling;
-    }
-  }
-
   .trialAdvertTitle {
     @include fontStylemanropeBold;
     margin-bottom: 40px;
+  }
+}
+
+.trialAdvertConditions {
+  @include trialConditions;
+  justify-content: center;
+  color: $secondaryColor;
+  margin-top: 32px;
+  margin-bottom: 50px;
+
+  > p {
+    margin-right: 56px;
+  }
+
+  img {
+    @include tickIconStyling;
+  }
+}
+
+@media #{$medium-screen} {
+  .trialAdvertConditions {
+    margin: 30px 24px;
+
+    p {
+      margin-right: 0;
+    }
   }
 }

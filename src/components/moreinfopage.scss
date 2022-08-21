@@ -1,5 +1,6 @@
 @import "../styles/settings.scss";
 @import "../styles/mixins.scss";
+@import "../styles/responsive.scss";
 
 .moreInfoPageContainer {
   display: flex;
@@ -240,5 +241,11 @@
         }
       }
     }
+  }
+}
+
+@media #{$medium-screen} {
+  .moreInfoPageContainer {
+    display: none;
   }
 }

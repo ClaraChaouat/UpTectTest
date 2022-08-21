@@ -1,6 +1,7 @@
 import "./sectionfeature.scss";
 
 export function SectionFeature(props) {
+  console.log(props)
   return (
     <div className="cardsContainer">
       <div className={`middleCards ${props.rowInverted ? "reversed" : ""}`}>
