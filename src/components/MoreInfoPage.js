@@ -9,7 +9,7 @@ import textBox from "../images/text-box.png";
 
 export function MoreInfoPage() {
   return (
-    <div style={{display:"none"}}  className="moreInfoPageContainer">
+    <div   className="moreInfoPageContainer">
       <div className="moreInfoPage">
         <div className="moreInfoPageHeader">
           <p className="moreInfoPageHeaderTitle">But wait. There is more</p>
