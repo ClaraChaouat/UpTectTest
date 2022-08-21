@@ -1,4 +1,7 @@
 # Layout integration::art:
+<p align="center">
+  <img width="700" src="./src/images/upflow.gif"/>
+</p>
 
 ## Description::woman_teacher:
 The aim of this project is to replicate a layout according to a given design
@@ -14,6 +17,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+## Technos:hammer:
+
+- React,
+- SCSS.
 
 
 
