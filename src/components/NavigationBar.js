@@ -11,25 +11,25 @@ export function NavigationBar() {
       <nav className="navBarItems">
         <ul>
           <li>
-            <a href="#">
+            <a href="!#">
               Product<img src={narrow} alt="Toggle Button "></img>
             </a>
           </li>
           <li>
-            <a href="#">Pricing</a>
+            <a href="!#">Pricing</a>
           </li>
           <li>
-            <a href="#">Customers</a>
+            <a href="!#">Customers</a>
           </li>
           <li>
-            <a href="#">
+            <a href="!#">
               Learn<img src={narrow} alt="Toggle Button "></img>
             </a>
           </li>
         </ul>
       </nav>
       <div className="navBarLogIn">
-        <a href="#" className="navBarLogInItem">
+        <a href="!#" className="navBarLogInItem">
           Log in
         </a>
         <button>
